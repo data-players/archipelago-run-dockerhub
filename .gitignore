@@ -1,3 +1,4 @@
-data
-keycloak
-middleware
+/data
+/keycloak
+/middleware
+.vscode
