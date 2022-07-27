@@ -1,7 +1,7 @@
 local= docker-compose -f docker-compose-local.yaml
-prod= docker-compose -f docker-compose-prod.yaml
+prod= docker-compose
 
-build-prod:
+build:
 	$(prod) build --no-cache
 
 build-local:
@@ -10,13 +10,13 @@ build-local:
 build-dockerhub:
 	docker-compose -f docker-compose-dockerhub.yaml build
 
-start-prod: 
+start: 
 	$(prod) up -d
 
-stop-prod: 
+stop: 
 	$(prod) down
 
-logs-prod:
+logs:
 	$(prod) logs -f
 
 logs-local:
