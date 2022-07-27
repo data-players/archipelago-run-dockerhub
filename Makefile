@@ -28,5 +28,8 @@ start-local:
 stop-local: 
 	$(local) down
 
+set-compact-cron: 
+	(crontab -l 2>/dev/null; echo "0 4 * * * $(path-cron) >> /tmp/cronlog.txt") | crontab -
+
 prune-data:
 	sudo rm -rf ./data
