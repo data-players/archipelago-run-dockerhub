@@ -55,6 +55,7 @@ services:
       - ./middleware/logs:/archipelago/middleware/logs
       - ./middleware/jwt:/archipelago/middleware/jwt
       - ./middleware/uploads:/archipelago/middleware/uploads
+      - ./addOn:/archipelago/middleware/addOn
     environment:
       - SEMAPPS_SPARQL_ENDPOINT=http://fuseki:3030/
       - SEMAPPS_MAIN_DATASET=localData
@@ -64,11 +65,11 @@ services:
       - 'SEMAPPS_OIDC_ISSUER=http://keycloak:8080/auth/realms/DP/'
       - SEMAPPS_OIDC_CLIENT_ID=semapps
       - SEMAPPS_REDIS_URL=redis://redis:6379/0
-    command: bash -c "cp -r ./addOn/middleware/* . && pm2-runtime 'yarn run dev'"
+    command: bash -c "cp -r ./addOn/middleware/* . && pm2-runtime 'yarn start'"
     networks:
       - semapps
-    expose:
-      - "3000"
+    ports:
+      - "3000:3000"
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.middleware.rule=Host(`data.myDomain.com`)"
@@ -85,8 +86,8 @@ services:
       - ./addOn:/archipelago/frontend/addOn
     networks:
       - semapps
-    expose:
-      - "4000"
+    ports:
+      - "4000:4000"
     command: bash -c "cp -r ./addOn/frontend/* . && yarn build && serve -s build -l 4000"
     labels:
       - "traefik.enable=true"
