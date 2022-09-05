@@ -125,12 +125,6 @@ docker-compose up -d --force-recreate
 
 ## Other
 
-If you need to use local dockerfile, you can use :
-```
-make start-dockerfile 
-```
-instead.
-
 ### compact
 
 To compact your data you can use make compact.
