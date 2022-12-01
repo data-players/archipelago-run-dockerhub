@@ -1,6 +1,8 @@
 # archipelago-run-dockerhub
 
-The easiest way to deploy an archipelago prepared by Data Players reday for few customisation thing ! 
+The easiest way to deploy an archipelago prepared by Data Players ready for few customisation thing !
+
+However, if you want to deploy a classic archipelago with no/low modification, not using dockerhub image, use https://github.com/data-players/deploy-archipelago-classic/blob/main/README.md
 
 ## Data Players personnalisation
 
