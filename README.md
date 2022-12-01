@@ -2,7 +2,7 @@
 
 The easiest way to deploy an archipelago prepared by Data Players with few customisation thing ! 
 
-## Data Plyers personnalisation
+## Data Players personnalisation
 
 - deployement by DockerHub images build thanks to https://github.com/data-players/archipelago-build-dockerhub
 - Reified Relation betwen user, organstion with role
