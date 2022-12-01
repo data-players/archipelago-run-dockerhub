@@ -1,6 +1,6 @@
 # archipelago-run-dockerhub
 
-The easiest way to deploy an archipelago prepared by Data Players with few customisation thing ! 
+The easiest way to deploy an archipelago prepared by Data Players reday for few customisation thing ! 
 
 ## Data Players personnalisation
 
