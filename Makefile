@@ -1,5 +1,5 @@
 local= docker-compose -f docker-compose-local.yaml
-prod= docker-compose -fdocker-compose-prod.yaml
+prod= docker-compose -f docker-compose-prod.yaml
 path-cron-prod= ./compact-cron-prod.sh
 path-cron-local= ./compact-cron-local.sh
 
