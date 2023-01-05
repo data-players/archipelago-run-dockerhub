@@ -2,6 +2,8 @@
 
 The easiest way to deploy an archipelago prepared by Data Players ready for few customisation thing !
 
+[archipelago](https://github.com/assemblee-virtuelle/archipelago) is a software powered by semapps [semapps](https://github.com/assemblee-virtuelle/semapps)
+
 However, if you want to deploy a classic archipelago with no/low modification, not using dockerhub image, use https://github.com/data-players/deploy-archipelago-classic/blob/main/README.md
 
 ## Data Players personnalisation
